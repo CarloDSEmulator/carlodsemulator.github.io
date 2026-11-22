@@ -2,34 +2,42 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CarloDS</title>
-<meta name="description" content="A dual-screen handheld emulator for Android">
-<link rel="alternate" hreflang="zh-Hans" href="zh/index.html">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CarloDS – NDS emulator for Android</title>
+<meta name="description" content="NDS emulator with a custom-built, high-accuracy core: HD 3D, local play, cheats.">
+<meta property="og:title" content="CarloDS – NDS emulator for Android"><meta property="og:description" content="NDS emulator with a custom-built, high-accuracy core: HD 3D, local play, cheats."><meta property="og:image" content="https://carlodsemulator.github.io/icon-180.png">
+<link rel="alternate" hreflang="en" href="https://carlodsemulator.github.io/index.html"><link rel="alternate" hreflang="zh-Hans" href="https://carlodsemulator.github.io/zh/index.html"><link rel="alternate" hreflang="zh-Hant" href="https://carlodsemulator.github.io/zh-tw/index.html"><link rel="alternate" hreflang="ja" href="https://carlodsemulator.github.io/ja/index.html"><link rel="alternate" hreflang="ko" href="https://carlodsemulator.github.io/ko/index.html"><link rel="alternate" hreflang="de" href="https://carlodsemulator.github.io/de/index.html"><link rel="alternate" hreflang="es" href="https://carlodsemulator.github.io/es/index.html"><link rel="alternate" hreflang="fr" href="https://carlodsemulator.github.io/fr/index.html"><link rel="alternate" hreflang="it" href="https://carlodsemulator.github.io/it/index.html"><link rel="alternate" hreflang="pt-BR" href="https://carlodsemulator.github.io/pt/index.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css">
-<link rel="icon" href="icon-64.png" type="image/png">
-<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-64.png" type="image/png"><link rel="apple-touch-icon" href="icon-180.png">
 </head>
 <body>
-<header class="top">
-  <a class="brand" href="index.html"><img src="icon-64.png" alt="" width="34" height="34"><b>Carlo<span>DS</span></b></a>
-  <a class="lang" href="zh/index.html" hreflang="zh-Hans">中文</a>
-</header>
-<main>
-<section class="hero">
-  <h1>CarloDS</h1>
-  <p>A dual-screen handheld emulator for Android, with its own emulation core.</p>
-</section>
-<div class="cards">
-  <div class="card"><b>Local wireless play</b><span>Play together with phones on the same Wi-Fi or hotspot.</span></div>
-  <div class="card"><b>Memory search and cheats</b><span>Find values in memory while the game keeps running, and turn them into cheats.</span></div>
-  <div class="card"><b>Layouts for every grip</b><span>Portrait, big and small screens, side by side, or a single screen.</span></div>
-</div>
-</main>
-<footer>
-  <p>CarloDS doesn't include or distribute any games.</p>
-  <a href="privacy.html">Privacy policy</a>
-</footer>
+<header class="top"><a class="brand" href="index.html"><img src="icon-64.png" alt=""><b>Carlo<span>DS</span></b></a>
+<nav class="nav"><a href="index.html" aria-current="page">Home</a><a href="features.html">Features</a><a href="compatibility.html">Compatibility</a><a href="privacy.html">Privacy</a></nav>
+<select class="langsel" aria-label="Language" onchange="location.href=this.value"><option value="index.html" selected>English</option><option value="zh/index.html">简体中文</option><option value="zh-tw/index.html">繁體中文</option><option value="ja/index.html">日本語</option><option value="ko/index.html">한국어</option><option value="de/index.html">Deutsch</option><option value="es/index.html">Español</option><option value="fr/index.html">Français</option><option value="it/index.html">Italiano</option><option value="pt/index.html">Português</option></select></header>
+<nav class="mnav"><a href="index.html" aria-current="page">Home</a><a href="features.html">Features</a><a href="compatibility.html">Compatibility</a><a href="privacy.html">Privacy</a></nav>
+<section class="panel hero"><div><div class="eyebrow">NDS emulator for Android</div><h1>Carlo<span>DS</span></h1><p class="sub">NDS emulator with a custom-built, high-accuracy core: HD 3D, local play, cheats.</p></div>
+<div class="shot"><img src="img/en-US/2.webp" alt="" width="806" height="1472"></div>
+<div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a><a class="btn light" href="features.html">All features</a></div></section>
+<section class="panel alt"><div><h2>Your games <span class="l2">at a glance</span></h2><p class="sub">Icons and titles read from each game. Pick up where you left off.</p></div>
+<div class="shot"><img src="img/en-US/1.webp" alt=""></div><div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a><a class="btn light" href="features.html#library">Learn more</a></div></section>
+<section class="panel dark"><div><h2>Built from scratch <span class="l2">true to the hardware</span></h2><p class="sub">CarloDS is an NDS emulator for Android phones and tablets. Its emulation core, including the ARM9 and ARM7 processors, 2D and 3D graphics, audio, wireless and the built-in BIOS, was built entirely from scratch and calibrated against extensive testing on original hardware. Most games run without BIOS files; ZIP archives are supported.</p></div>
+<ul class="core-points"><li><b>Calibrated against hardware test results</b>CPU timing, DMA, 3D rendering, anti-aliasing, clipping and more</li><li><b>Two cores</b>The accurate core, closest to the original hardware, and the fast core, which uses JIT to run most games considerably faster</li><li>Built-in BIOS; your own BIOS and firmware files in the games folder are used automatically</li></ul><div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a><a class="btn light" href="features.html#core">Learn more</a></div></section>
+<section class="panel"><div><h2>Portrait or landscape <span class="l2">your layout</span></h2><p class="sub">Stacked, big + small, side by side or one screen, in one tap.</p></div>
+<div class="shot wide"><img src="img/en-US/3.webp" alt=""></div><div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a><a class="btn light" href="features.html#layouts">Learn more</a></div></section>
+<section class="panel alt"><div><h2>Quality presets <span class="l2">that fit your phone</span></h2><p class="sub">Low, mid or high-end in one tap. 3D up to 4×.</p></div>
+<div class="shot wide"><img src="img/en-US/4.webp" alt=""></div><div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a><a class="btn light" href="features.html#quality">Learn more</a></div></section>
+<section class="panel"><div><h2>Every feature <span class="l2">one menu away</span></h2><p class="sub">Save states, cheats, rewind, wireless play, downloads, achievements.</p></div>
+<div class="shot"><img src="img/en-US/5.webp" alt=""></div><div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a><a class="btn light" href="features.html#tools">Learn more</a></div></section>
+<section class="panel alt"><div><h2>Same Wi‑Fi, <span class="l2">play together</span></h2><p class="sub">No router? A phone hotspot works too.</p></div>
+<div class="shot wide"><img src="img/en-US/6.webp" alt=""></div><div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a><a class="btn light" href="features.html#wireless">Learn more</a></div></section>
+<section class="panel"><div><h2>Cheats &amp; <span class="l2">memory search</span></h2><p class="sub">Search values in a floating window while you play.</p></div>
+<div class="shot"><img src="img/en-US/7.webp" alt=""></div><div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a><a class="btn light" href="features.html#tools">Learn more</a></div></section>
+<section class="panel alt"><div><h2>Rewind <span class="l2">undo any mistake</span></h2><p class="sub">One tap goes back 5, 10 or 15 seconds, then play on.</p></div>
+<div class="shot wide"><img src="img/en-US/8.webp" alt=""></div><div class="btns"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a><a class="btn light" href="features.html#tools">Learn more</a></div></section>
+<section class="more"><h2>Additional features</h2><div class="grid"><div>RetroAchievements support</div><div>Cloud saves synchronised via Google Drive</div><div>Controller and keyboard support with fully remappable buttons</div><div>Microphone input for games that require blowing or speaking; audio is recorded only while a game is running</div><div><b>GBA slot</b>Insert a GBA game from RetroGenY, our GBA emulator, or a Rumble Pak using the device&#x27;s vibration</div><div><b>Console profile</b>Nickname, birthday, favourite colour, message and language</div><div><b>Problem reporting</b>Send diagnostic logs to the developer by email</div></div><div class="cta" style="margin-top:40px"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a></div></section>
+<footer><div class="in"><div class="disc">Disclaimer</div><ol><li>CarloDS is only an emulator. It does not include or provide any game ROMs or copyrighted files.</li><li>Please play only games you legally own.</li><li>This app is not affiliated with Nintendo, and is not authorized or sponsored by Nintendo. All platform names and trademarks mentioned belong to their respective owners.</li><li>RetroAchievements is an independent community service and is not affiliated with this app.</li></ol><div class="links"><a href="index.html">Home</a><a href="features.html">Features</a><a href="compatibility.html">Compatibility</a><a href="privacy.html">Privacy</a><a href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Google Play</a><span>© 2026 CarloDS</span></div></div></footer>
+<script>(function(){var t=document.querySelector('.top');if(t.classList.contains('solid'))return;function f(){t.classList.toggle('solid',scrollY>40)};addEventListener('scroll',f,{passive:true});f();})();</script>
 </body>
 </html>

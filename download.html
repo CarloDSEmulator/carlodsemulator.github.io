@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CarloDS – NDS emulator for Android</title>
+<meta name="description" content="Get CarloDS, an NDS emulator for Android, on Google Play.">
+<meta property="og:title" content="CarloDS – NDS emulator for Android">
+<meta property="og:description" content="NDS emulator with a custom-built, high-accuracy core: HD 3D, local play, cheats.">
+<meta property="og:image" content="https://carlodsemulator.github.io/icon-180.png">
+<meta property="og:url" content="https://carlodsemulator.github.io/download.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<link rel="icon" href="icon-64.png" type="image/png"><link rel="apple-touch-icon" href="icon-180.png">
+<style>
+  /* download only: one centred panel, no navigation (the link the app shares) */
+  .dl { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 32px 24px;
+        background: linear-gradient(180deg, #f4f4f4 0%, #eceded 100%); }
+  .dl img.icon { width: 96px; height: 96px; border-radius: 22px; margin-bottom: 22px; box-shadow: 0 12px 28px rgba(23,26,32,.16); }
+  .dl h1 { margin: 0; font-weight: 600; font-size: 44px; letter-spacing: -.3px; }
+  .dl h1 span { color: var(--red); }
+  .dl p.lead { color: var(--muted); max-width: 26em; margin: 10px 0 32px; }
+  .dl .btn { width: 100%; max-width: 320px; }
+  .dl .note { color: var(--faint); font-size: 13px; margin-top: 18px; }
+  .dl .home { margin-top: 10px; font-size: 14px; color: var(--ink); }
+</style>
+</head>
+<body>
+<main class="dl">
+  <img class="icon" src="icon-180.png" alt="">
+  <h1>Carlo<span>DS</span></h1>
+  <p class="lead" id="lead">NDS emulator with a custom-built, high-accuracy core: HD 3D, local play, cheats.</p>
+  <a class="btn primary" id="play" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Get it on Google Play</a>
+  <p class="note" id="note">CarloDS does not include any games.</p>
+  <a class="home" id="home" href="index.html">About CarloDS</a>
+</main>
+<script>
+  // one shared link: shown in the language of the browser that opens it
+  (function () {
+    var D = {"en": {"lead": "NDS emulator with a custom-built, high-accuracy core: HD 3D, local play, cheats.", "play": "Get it on Google Play", "note": "CarloDS does not include any games.", "about": "About CarloDS", "home": "index.html", "title": "CarloDS – NDS emulator for Android"}, "zh-Hans": {"lead": "Android NDS 模拟器：自主研发高精度核心，支持高清 3D、本地联机、金手指与即时存档。", "play": "在 Google Play 下载", "note": "CarloDS 不包含任何游戏。", "about": "了解 CarloDS", "home": "zh/index.html", "title": "CarloDS – Android NDS 模拟器"}, "zh-Hant": {"lead": "Android NDS 模擬器：自主研發高精度核心，支援高畫質 3D、本地連線、金手指與即時存檔。", "play": "在 Google Play 下載", "note": "CarloDS 不包含任何遊戲。", "about": "了解 CarloDS", "home": "zh-tw/index.html", "title": "CarloDS – Android NDS 模擬器"}, "ja": {"lead": "独自開発の高精度コアを搭載した NDS エミュレーター。高画質 3D・ローカル通信・チートに対応。", "play": "Google Play で入手", "note": "CarloDS にゲームは含まれていません。", "about": "CarloDS について", "home": "ja/index.html", "title": "CarloDS – Android 向け NDS エミュレーター"}, "ko": {"lead": "자체 개발 고정밀 코어를 탑재한 NDS 에뮬레이터. 고화질 3D, 로컬 통신, 치트, 상태 저장 지원.", "play": "Google Play에서 받기", "note": "CarloDS에는 게임이 포함되어 있지 않습니다.", "about": "CarloDS 소개", "home": "ko/index.html", "title": "CarloDS – Android용 NDS 에뮬레이터"}, "de": {"lead": "NDS-Emulator mit eigenem Präzisionskern: HD-3D, lokales Drahtlosspiel, Cheats.", "play": "Bei Google Play herunterladen", "note": "CarloDS enthält keine Spiele.", "about": "Über CarloDS", "home": "de/index.html", "title": "CarloDS – NDS-Emulator für Android"}, "es": {"lead": "Emulador de NDS de núcleo propio y alta precisión: 3D en HD, juego local, trucos", "play": "Disponible en Google Play", "note": "CarloDS no incluye ningún juego.", "about": "Acerca de CarloDS", "home": "es/index.html", "title": "CarloDS – Emulador de NDS para Android"}, "fr": {"lead": "Émulateur NDS au cœur maison de haute précision : 3D HD, jeu local, triche.", "play": "Disponible sur Google Play", "note": "CarloDS ne contient aucun jeu.", "about": "À propos de CarloDS", "home": "fr/index.html", "title": "CarloDS – Émulateur NDS pour Android"}, "it": {"lead": "Emulatore NDS con core proprio ad alta precisione: 3D HD, gioco locale, trucchi", "play": "Disponibile su Google Play", "note": "CarloDS non include alcun gioco.", "about": "Informazioni su CarloDS", "home": "it/index.html", "title": "CarloDS – Emulatore NDS per Android"}, "pt-BR": {"lead": "Emulador de NDS com núcleo próprio e preciso: 3D em HD, jogo local, trapaças", "play": "Disponível no Google Play", "note": "O CarloDS não inclui nenhum jogo.", "about": "Sobre o CarloDS", "home": "pt/index.html", "title": "CarloDS – Emulador de NDS para Android"}};
+    var l = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase();
+    var k = 'en';
+    if (l.indexOf('zh') === 0) k = /tw|hk|mo|hant/.test(l) ? 'zh-Hant' : 'zh-Hans';
+    else if (l.indexOf('pt') === 0) k = 'pt-BR';
+    else { var p = l.slice(0, 2); if (D[p]) k = p; }
+    var d = D[k]; if (!d || k === 'en') return;
+    document.documentElement.lang = k; document.title = d.title;
+    document.getElementById('lead').textContent = d.lead;
+    document.getElementById('play').textContent = d.play;
+    document.getElementById('note').textContent = d.note;
+    var h = document.getElementById('home'); h.textContent = d.about; h.href = d.home;
+  })();
+</script>
+</body>
+</html>

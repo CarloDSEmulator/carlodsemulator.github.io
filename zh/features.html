@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>功能 – CarloDS</title>
+<meta name="description" content="Android NDS 模拟器：自主研发高精度核心，支持高清 3D、本地联机、金手指与即时存档。">
+<meta property="og:title" content="功能 – CarloDS"><meta property="og:description" content="Android NDS 模拟器：自主研发高精度核心，支持高清 3D、本地联机、金手指与即时存档。"><meta property="og:image" content="https://carlodsemulator.github.io/icon-180.png">
+<link rel="alternate" hreflang="en" href="https://carlodsemulator.github.io/features.html"><link rel="alternate" hreflang="zh-Hans" href="https://carlodsemulator.github.io/zh/features.html"><link rel="alternate" hreflang="zh-Hant" href="https://carlodsemulator.github.io/zh-tw/features.html"><link rel="alternate" hreflang="ja" href="https://carlodsemulator.github.io/ja/features.html"><link rel="alternate" hreflang="ko" href="https://carlodsemulator.github.io/ko/features.html"><link rel="alternate" hreflang="de" href="https://carlodsemulator.github.io/de/features.html"><link rel="alternate" hreflang="es" href="https://carlodsemulator.github.io/es/features.html"><link rel="alternate" hreflang="fr" href="https://carlodsemulator.github.io/fr/features.html"><link rel="alternate" hreflang="it" href="https://carlodsemulator.github.io/it/features.html"><link rel="alternate" hreflang="pt-BR" href="https://carlodsemulator.github.io/pt/features.html">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+<link rel="icon" href="../icon-64.png" type="image/png"><link rel="apple-touch-icon" href="../icon-180.png">
+</head>
+<body>
+<header class="top solid"><a class="brand" href="index.html"><img src="../icon-64.png" alt=""><b>Carlo<span>DS</span></b></a>
+<nav class="nav"><a href="index.html">首页</a><a href="features.html" aria-current="page">功能</a><a href="compatibility.html">兼容性</a><a href="privacy.html">隐私政策</a></nav>
+<select class="langsel" aria-label="语言" onchange="location.href=this.value"><option value="../features.html">English</option><option value="../zh/features.html" selected>简体中文</option><option value="../zh-tw/features.html">繁體中文</option><option value="../ja/features.html">日本語</option><option value="../ko/features.html">한국어</option><option value="../de/features.html">Deutsch</option><option value="../es/features.html">Español</option><option value="../fr/features.html">Français</option><option value="../it/features.html">Italiano</option><option value="../pt/features.html">Português</option></select></header>
+<nav class="mnav"><a href="index.html">首页</a><a href="features.html" aria-current="page">功能</a><a href="compatibility.html">兼容性</a><a href="privacy.html">隐私政策</a></nav>
+<main class="page"><h1>功能</h1><p class="lead">CarloDS 是一款面向 Android 手机与平板的 NDS 模拟器。其模拟核心完全自主研发，涵盖 ARM9 与 ARM7 处理器、2D 与 3D 图形、音频、无线通信及内置 BIOS，并依据大量真机测试结果逐项校准时序与画面，力求还原原机表现。多数游戏无需 BIOS 文件即可运行，并支持 ZIP 格式。</p>
+<section class="fsec" id="core"><div><h2>自主研发的高精度核心</h2><ul><li>以真机测试结果为基准，逐项校正 CPU 时序、DMA、3D 绘制、抗锯齿与裁剪等细节</li><li><b>提供两种核心</b>精确核心最大程度贴近原机；快速核心采用 JIT 加速，多数游戏运行速度显著提升</li><li>内置 BIOS，无需另行准备；游戏目录中如有用户自备的 BIOS 与固件文件，将自动加载</li></ul></div><figure><img src="../img/zh-CN/2.webp" alt=""></figure></section>
+<section class="fsec" id="library"><div><h2>游戏库</h2><ul><li>自动读取游戏图标与名称，支持子文件夹及 ZIP 文件</li><li>提供搜索、最近游玩记录及“继续游戏”入口</li><li>支持为每款游戏设置自定义封面</li><li>首次使用时可进行设备性能检测，自动推荐最适合当前设备的运行配置</li></ul></div><figure><img src="../img/zh-CN/1.webp" alt=""></figure></section>
+<section class="fsec" id="layouts"><div><h2>屏幕布局与操作</h2><ul><li>支持竖屏、横向大小屏、横向左右并排及横向单屏布局，可一键切换并交换主副屏</li><li>下屏支持触控操作</li><li>屏幕方向可自由选择</li><li>可隐藏屏幕按键，使用外接手柄操作</li><li>支持模拟合盖与开盖（多数游戏合盖后进入休眠）</li></ul></div><figure><img src="../img/zh-CN/3.webp" alt=""></figure></section>
+<section class="fsec" id="quality"><div><h2>画质与性能</h2><ul><li>提供低端、中端、高端三档预设；完成性能检测后，另提供针对当前设备的推荐配置</li><li>3D 渲染最高 4 倍分辨率（支持自动），提供 3D 抗锯齿、纹理平滑及 2D 平滑放大</li><li><b>渲染方式</b>Software、OpenGL ES、Vulkan</li><li><b>画面滤镜</b>平滑、LCD、扫描线、xBR、CAS 锐化，并可调节亮度与对比度</li><li><b>性能选项</b>16 位输出、3D 多线程渲染、3D 指令加速、自动跳帧</li><li>画面、性能及手柄按键设置均可按游戏单独保存</li><li><b>屏幕信息显示</b>启动动画、帧率及详细性能数据</li></ul></div><figure><img src="../img/zh-CN/4.webp" alt=""></figure></section>
+<section class="fsec" id="tools"><div><h2>存档与工具</h2><ul><li>多个即时存档栏位，读档后可撤销；游戏意外中断时自动保存进度</li><li>快进（最高 4 倍）、倒带（单次回退 5、10 或 15 秒）、连发（速度可调）</li><li><b>游戏内快捷菜单</b>音量、快速存档、截图、合盖、金手指、内存搜索、倒带，显示项目可自定义</li><li><b>金手指</b>支持 Action Replay 代码，可导入 usrcheat.dat、cheats.xml 数据库及 .mch、.dct、.cht 与文本格式文件</li><li><b>内存搜索</b>以悬浮窗形式运行，搜索期间游戏不中断；支持内存查看与写入记录</li></ul></div><figure><img src="../img/zh-CN/7.webp" alt=""></figure></section>
+<section class="fsec" id="wireless"><div><h2>无线联机与下载内容</h2><ul><li><b>本地无线联机</b>同一 Wi‑Fi 网络下的设备可直接联机；无路由器时可使用手机热点</li><li>内置已停止服务的在线功能的替代服务，由本机为局域网内设备提供（部分游戏支持）</li><li><b>下载内容（实验性功能）</b>内置游戏礼物与配信内容，无需联网即可领取</li></ul></div><figure><img src="../img/zh-CN/6.webp" alt=""></figure></section>
+<section class="fsec noimg" id="more"><div><h2>其他功能</h2><ul><li>支持 RetroAchievements 成就</li><li><b>云存档</b>通过 Google Drive 同步游戏存档</li><li>支持外接手柄与键盘，所有按键均可自定义</li><li><b>麦克风输入</b>用于需要吹气或语音的游戏，仅在游戏运行期间录音</li><li><b>GBA 卡槽</b>可配合本团队的 GBA 模拟器 RetroGenY 插入 GBA 游戏，或模拟震动卡（使用设备振动）</li><li><b>DS 用户资料</b>昵称、生日、喜爱颜色、留言及语言</li><li><b>问题反馈</b>可将运行日志通过邮件发送给开发者</li></ul></div></section>
+<div class="cta"><a class="btn primary" href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">在 Google Play 下载</a></div></main>
+<footer><div class="in"><div class="disc">免责声明</div><ol><li>CarloDS 只是模拟器，不包含、不提供任何游戏 ROM 或受版权保护的文件。</li><li>请只使用你自己合法拥有的游戏。</li><li>本应用与任天堂（Nintendo）没有任何关联，也未得到其授权或赞助。文中提到的平台名称和商标归各自所有者所有。</li><li>RetroAchievements 是一项独立的社区服务，与本应用程序没有任何隶属关系。</li></ol><div class="links"><a href="index.html">首页</a><a href="features.html">功能</a><a href="compatibility.html">兼容性</a><a href="privacy.html">隐私政策</a><a href="https://play.google.com/store/apps/details?id=com.ttproject.carlods">Google Play</a><span>© 2026 CarloDS</span></div></div></footer>
+<script>(function(){var t=document.querySelector('.top');if(t.classList.contains('solid'))return;function f(){t.classList.toggle('solid',scrollY>40)};addEventListener('scroll',f,{passive:true});f();})();</script>
+</body>
+</html>
